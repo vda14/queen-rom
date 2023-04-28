@@ -1,0 +1,36 @@
+9:21 PM 2023-03-15
+#opening file
+    file = open('C:\\Users\\vicky\\OneDrive\\SFU\\CMPT120\\Assignment 3\\grades.txt', 'r') 
+    for line in file:
+        line = line.rstrip()
+        line = line.split(' ')
+        average_list = []
+        if line[0] in command:
+                average_list.append(line[0])
+        print(average_list)
+    # print("{:.2f}".format(average))
+
+8:57 PM 2023-03-15
+#define my variables
+
+#receiving input command which is argument in functions
+command = input("")
+
+#if command is avg
+if 'avg' in command:
+
+#opening file
+    file = open('C:\\Users\\vicky\\OneDrive\\SFU\\CMPT120\\Assignment 3\\grades.txt', 'r') 
+    for line in file:
+        line = line.rstrip()
+        line = line.split(' ')
+        print(line[3])
+    # print("{:.2f}".format(average))
+
+# #if command is gpa
+# elif 'gpa' in command:
+# #if command is fails
+# elif 'fails' in command:
+# #if command is quit
+# else:
+#     exit()
